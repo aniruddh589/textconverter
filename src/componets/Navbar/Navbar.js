@@ -19,10 +19,10 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/">TextConverter</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Home">Home</NavLink>
+              {/* <NavLink className="nav-link" to="/Home">Home</NavLink> */}
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">About</NavLink>
+              {/* <NavLink className="nav-link" to="/about">About</NavLink> */}
             </li>
             
           </ul> 
