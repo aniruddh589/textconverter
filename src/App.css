@@ -1,0 +1,123 @@
+body {
+	min-height: 100vh;
+	background: #f5d8e7 !important;
+}
+
+.content h2 {
+	font-size: 8em;
+	color: rgba(0, 0, 0, 0.05);
+	transition: 0.5s;
+}
+ .content h3 {
+	font-size: 2em;
+	color: #755968;
+	z-index: 1;
+	transition: 0.5s;
+}
+ .content p {
+	font-size: 1em;
+	font-weight: 300;
+	color: #755968;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+ 
+.card {
+	font-family: "Poppins", sans-serif;
+}
+
+.container.cardmain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: auto; /*1200px*/
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+.container.cardmain .card {
+	position: relative;
+	width: 320px;
+	height: 300px;
+	box-shadow:  5px 5px 5px rgba(255, 255, 255, 0.5),
+		 -5px -5px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 15px; /*edges rounding*/
+	margin: 30px;
+
+}
+.container.cardmain .card .box {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.5),
+		inset -5px -5px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	transition: 0.5s;
+	padding:10px;
+}
+
+.container.cardmain .card:hover .box {
+	transform: translateY(-50px);
+	box-shadow: 0 10 px 40px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(45deg, #c897b1, #fff);
+}
+.container.cardmain .card .box .content h2 {
+	right: 12px;
+	font-size: 22px;
+	color: rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.container.cardmain .card .box .content h3 {
+	font-size: 2em;
+	color: #755968;
+	z-index: 1;
+	transition: 0.5s;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.container.cardmain .card .box .content p {
+	font-size: 1em;
+	font-weight: 300;
+	color: #755968;
+	z-index: 1;
+	transition: 0.5s;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	overflow: hidden;
+}
+.container.cardmain .card .box .content a {
+	position: relative;
+	display: inline-block;
+	margin-top: 15px;
+	padding: 8px 20px;
+	background: #c896b0;
+	font-size: 1em;
+	font-weight: 300;
+	border-radius: 20px;
+	color: #fbeff5;
+	text-decoration: none;
+	font-weight: 400;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container.cardmain .card:hover .box .content a {
+	background: #03a9f4;
+} 
+
+.card-form-main {
+	width: 100%;
+	max-width: 33%;
+	margin: 40px auto 0;
+}
